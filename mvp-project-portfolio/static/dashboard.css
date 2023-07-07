@@ -1,0 +1,59 @@
+/* dashboard.css */
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+  
+  /* Rest of the CSS styles remain the same */
+  
+  
+  .profile-icon {
+    margin-bottom: 20px;
+  }
+  
+  .profile-icon i {
+    font-size: 80px;
+    color: #555;
+  }
+  
+  .profile-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-text h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-text p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .profile-actions a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .profile-actions i {
+    margin-right: 5px;
+  }
+  
+  .Logout-button:hover {
+    color: #ff5a5f;
+  }
+  

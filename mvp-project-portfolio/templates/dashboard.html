@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css')}}">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-icon">
+      <i class="fas fa-user-circle fa-10x"></i>
+    </div>
+    <div class="profile-text">
+      <h1>Welcome, {{ user.username }}!</h1>
+      <p>Email: {{ user.email }}</p>
+      </div>
+    <div class="profile-actions">
+      <a href="{{ url_for('user.logout') }}" class="Logout-button">
+        <i class="fas fa-sign-out-alt"></i>
+        </i>
+        Logout
+      </a>
+    </div>
+  </div>
+</body>
+</html>

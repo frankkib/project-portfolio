@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mvp.css') }}">
+    <link rel="stylesheet" href="mvp.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SMART HOMES</title>
+</head>
+<header>
+    
+    <div><img id="logo" src="{{ url_for('static', filename='images/home logo.png') }}" alt="loading"></div>
+</header>
+<body>
+  <img src="{{ url_for('static', filename='images/home logo.png') }}" alt="">
+  <div class="container">
+    <section>
+        <form class="search-box">
+            <input type="text" placeholder="search...">
+            <button>Search</button>
+        </form>
+        <div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span class="icon-tex">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="icon-tex">About us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cogs"></i>
+                            <span class="icon-tex">Services</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Single room</a></li>
+                            <li><a href="#">Studio Apartment</a></li>
+                            <li><a href="#">Bedsitters</a></li>
+                            <li><a href="#">1, 2, and Bedroom House</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-book"></i>
+                            <span class="icon-tex">Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span class="icon-tex">Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="Registration.html">
+                        <i class="fas fa-user-plus"></i>
+                          <span class="icon-tex">Register</span>
+                      </a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="sidebar">
+                <div class="main-menu">
+                    <button><i class="fas fa-map-marker-alt"></i>Location</button>
+                    <ul class="Location">
+                        <li><a href="page1.html">Jogoo</a></li>
+                        <li><a href="page2.html">Mwembe</a></li>
+                        <li><a href="page3.html">Denimark</a></li>
+                        <li><a href="page4.html">Nyanchwa</a></li>
+                        <li><a href="page5.html">Cathedral</a></li>
+                        <li><a href="page6.html">Fort Jesus</a></li>
+                        <li><a href="page7.html">Black House</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <h1>WELCOME TO SMARTHOMES</h1>
+        <div class="images">
+            <div class="images-item">
+                <img src="{{ url_for('static', filename='images/Hostels.jpg') }}">
+                <div class="image-description">
+                    <h3>Hostels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis fugiat consectetur repellat similique, inventore quae. Facere,
+                        fugit incidunt repellendus autem amet blanditiis ducimus voluptate?
+                        Animi ipsa quo aspernatur quas maiores!</p>
+                    <span class="real-laction">Location Tag</span>
+                    <div class="availability">
+                        <span class="status-availability">Available</span>
+                        <span class="count">5 Rooms Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="images-item">
+                <img src="{{ url_for('static', filename='images/rooms.jpg') }}">
+                <div class="image-description">
+                    <h3>Single Rooms</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis fugiat consectetur repellat similique, inventore quae. Facere,
+                        fugit incidunt repellendus autem amet blanditiis ducimus voluptate?
+                        Animi ipsa quo aspernatur quas maiores!</p>
+                    <span class="real-laction">Location Tag</span>
+                    <div class="availability">
+                        <span class="status available">Available</span>
+                        <span class="count">5 Rooms Available</span>
+                    </div>
+                </div>
+            </div>
+            <div class="images-item">
+                <img src="{{ url_for('static', filename='images/archdaily.jpg') }}">
+                <div class="image-description">
+                    <h3>1, 2, 3 Bedroom Houses</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nobis fugiat consectetur repellat similique, inventore quae. Facere,
+                        fugit incidunt repellendus autem amet blanditiis ducimus voluptate?
+                        Animi ipsa quo aspernatur quas maiores!</p>
+                    <span class="real-laction">Location Tag</span>
+                    <div class="availability">
+                        <span class="status-availability">Available</span>
+                        <span class="count">5 Rooms Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="foot">
+    <div class="social-icon">
+        <a href="#" class="icon-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+</body>
+</html>

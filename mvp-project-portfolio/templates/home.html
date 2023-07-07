@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New House</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+  <script src="{{ url_for('static', filename='newhouse.js') }}"></script>
+</head>
+<body>
+  <h1>Add New House</h1>
+  <button id="add-house-button" class="popup-button" onclick="toggleForm()">+</button>
+  <form id="house-form" action="{{ url_for('house.add_house') }}" method="POST" enctype="multipart/form-data" style="display: none;">
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+    <br>
+    <label for="is_available">Available:</label>
+    <input type="checkbox" id="is_available" name="is_available">
+    <br>
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required onchange="previewImage(event)">
+    <br>
+    <label for="width">Width:</label>
+    <input type="number" id="width" name="width" onchange="resizeImage()">
+    <br>
+    <label for="height">Height:</label>
+    <input type="number" id="height" name="height" onchange="resizeImage()">
+    <br>
+    <div id="preview-container">
+      <img id="preview" src="#" alt="Preview">
+    </div>
+    <br>
+    {{ form.csrf_token }}
+    <button type="submit">Add House</button>
+  </form>
+</body>
+</html>

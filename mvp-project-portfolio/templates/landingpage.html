@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SmartHomes</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='landingpage.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/59e7057e2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>SmartHomes</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="#features"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i>About</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="{{ url_for('user.login') }}"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+        <a href="{{ url_for('user.register') }}"><i class="fas fa-user-plus"></i>Register</a>
+     </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to SmartHomes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem sapien. Nulla facilisi.</p>
+      <a class="btn btn-primary" href="/register">Get Started</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Tyeps Of Houses</h2>
+    <div class="feature-box">
+      <div class="feature">
+        <i class="fa-regular fa-building fa-beat"></i>
+        <h3>Apartments</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-bed"></i>
+        <h3>BedSitters</h3>
+        <p>Sed sed lorem sapien. Nulla facilisi.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-check-circle"></i>
+        <h3>Hostels</h3>
+        <p>Donec finibus neque ac dui facilisis tempus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem sapien. Nulla facilisi.</p>
+    <a class="btn btn-secondary" href="#contact">Contact Us</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Review Us</h2>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a href="#" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="#" class="social-icon"><i class="fab fa-google"></i> Gmail</a>
+    </div>
+    <p>&copy; 2023. All rights reserved.</p>
+  </footer>  
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* AddNewHouse.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+.popup-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff5f6d;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.popup-button:hover {
+    background-color: #ff4057;
+}
+  
+.popup-button:focus {
+    outline: none;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+  
+form input[type="checkbox"] {
+    margin-top: 10px;
+}
+  
+form input[type="file"] {
+    margin-top: 10px;
+}
+  
+#preview-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+  
+#preview {
+    max-width: 100%;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+}
+  
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
